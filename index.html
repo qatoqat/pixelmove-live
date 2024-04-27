@@ -33,6 +33,16 @@
     </style>
 </head>
 <body>
+<pre>
+<code id="content"></code>
+</pre>
+<script>
+    function htmlEntities(str) {
+        return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    document.getElementById("content").innerHTML = htmlEntities(document.documentElement.innerHTML);
+</script>
 <script type="module">
     import init from './pkg/pixelmove.js';
 
