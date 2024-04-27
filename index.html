@@ -6,6 +6,12 @@
     <meta name="viewport"
           content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="twitter:card" content="player">
+    <meta name="twitter:title" content="neko">
+    <meta name="twitter:image" content="https://qatoqat.github.io/favicon.png">
+    <meta name="twitter:player" content="https://qatoqat.github.io/pixelmove-live/">
+    <meta name="twitter:player:height" content="350">
+    <meta name="twitter:player:width" content="350">
     <style>
         html, body {
             width: 100%;
@@ -29,6 +35,7 @@
 <body>
 <script type="module">
     import init from './pkg/pixelmove.js';
+
     let module = await init();
     module.notan_main(0);
 </script>
